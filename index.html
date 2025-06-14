@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MREM Solutions</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Techy font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- NAVIGATION -->
+  <nav class="nav">
+    <div class="nav-container">
+      <div class="nav-brand">MREM Solutions</div>
+      <button class="nav-toggle" aria-label="toggle menu">☰</button>
+      <ul class="nav-menu">
+        <li><a href="pages/notes.html">Notes</a></li>
+        <li><a href="pages/course.html">Courses</a></li>
+        <li><a href="pages/resources.html">AI Tools</a></li>
+        <li><a href="pages/placement.html">Placement</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">Welcome to MREM Solutions</h1>
+      <p class="hero-sub">Your ultimate hub for academic notes, PYQs, free courses, AI tools & placements.</p>
+      <div class="hero-cta">
+        <a href="pages/notes.html" class="btn btn-primary">Explore Notes</a>
+        <a href="pages/resources.html" class="btn btn-outline">Browse Resources</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- SHORTCUT CARDS -->
+  <section class="shortcuts">
+    <div class="shortcut-card">
+      <div class="icon">📘</div>
+      <h3>Notes & PYQs</h3>
+      <p>All branches, all years—downloadable PDFs.</p>
+    </div>
+    <div class="shortcut-card">
+      <div class="icon">📚</div>
+      <h3>Free Courses</h3>
+      <p>Top recommendations to boost skills.</p>
+    </div>
+    <div class="shortcut-card">
+      <div class="icon">🤖</div>
+      <h3>AI Tools</h3>
+      <p>Create PPTs, summaries & more—free.</p>
+    </div>
+    <div class="shortcut-card">
+      <div class="icon">💼</div>
+      <h3>Placement Prep</h3>
+      <p>Resumes, aptitude tests & interview guides.</p>
+    </div>
+  </section>
+
+  <!-- WELCOME SECTIONS (PREVIEWS) -->
+  <main class="previews">
+    <section id="notes" class="preview">
+      <h2>Notes & PYQs</h2>
+      <p>Branch-wise organized notes plus previous-year papers in PDF—filter by year & subject.</p>
+    </section>
+    <section id="courses" class="preview">
+      <h2>Free Courses</h2>
+      <p>Curated list of high-quality, 100% free online courses to elevate your knowledge.</p>
+    </section>
+    <section id="ai-tools" class="preview">
+      <h2>AI Tools</h2>
+      <p>Leverage AI for presentations, summaries, mind-maps and more.</p>
+    </section>
+    <section id="placements" class="preview">
+      <h2>Placement Prep</h2>
+      <p>Get interview Q&A, aptitude tests, and resume templates—all in one place.</p>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 MREM Solutions · Built with 💡 by Students for Students</p>
+  </footer>
+
+  <script>
+    // simple mobile menu toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+
+    navToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+
+    // Optional: close menu when link is clicked (on mobile)
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>
