@@ -272,4 +272,9 @@ body {
   }
 }
 
+.icon a {
+  text-decoration: none;
+  color: white;
+}
+
 
