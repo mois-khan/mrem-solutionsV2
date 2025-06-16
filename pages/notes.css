@@ -79,6 +79,9 @@ body {
   font-size: 1rem;
   outline: none;
   background: #111; color: var(--text-light);
+  background-color: #1a1a1a;
+  color: #fff;
+  border: 1px solid #00ffd0;
 }
 
 .sub-btn {
