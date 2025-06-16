@@ -60,6 +60,9 @@ body {
   width: 90%; max-width: 500px; padding: 0.8rem;
   border: none; border-radius: 6px;
   background: #111; color: var(--text-light);
+  background-color: #1a1a1a;
+  color: #fff;
+  border: 1px solid #00ffd0;
 }
 
 /* COURSES GRID */
