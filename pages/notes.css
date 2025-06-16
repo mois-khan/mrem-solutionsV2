@@ -1,0 +1,130 @@
+
+body {
+  margin: 0;
+  font-family: 'Rajdhani', sans-serif;
+  background-color: #0f0f0f;
+  color: #fff;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0b0b0b;
+  color: #00ffe5;
+  padding: 1rem 2rem;
+  position: relative;
+  z-index: 1000;
+}
+
+.logo {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+
+/* Desktop Nav */
+.nav {
+  background: var(--bg-dark);
+  position: sticky; top: 0; z-index: 100;
+}
+.nav-container {
+  max-width: 1080px; margin: auto;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: var(--gap);
+}
+.nav-brand { font-size: 1.5rem; font-weight: 800; color: var(--accent); }
+.nav-toggle {
+  font-size: 1.5rem; background: none; border: none; color: var(--text-light);
+  display: none; cursor: pointer;
+}
+.nav-menu {
+  list-style: none; display: flex; gap: var(--gap);
+}
+.nav-menu a {
+  text-decoration: none; color: var(--text-light); font-weight: 600;
+}
+.nav-menu a.active,
+.nav-menu a:hover { color: var(--accent); }
+
+@media (max-width: 768px) {
+  .nav-toggle { display: block; }
+  .nav-menu {
+    display: none; position: absolute; top: 64px; right: 0;
+    background: var(--bg-dark); flex-direction: column;
+    width: 100%; text-align: center; padding: var(--gap) 0;
+  }
+  .nav-menu.show { display: flex; }
+}
+
+.hero {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #00ffd0;
+}
+
+#searchBox {
+  margin-top: 1rem;
+  padding: 0.8rem 1.2rem;
+  width: 90%;
+  max-width: 500px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  background: #111; color: var(--text-light);
+}
+
+.sub-btn {
+  text-decoration: none;
+}
+
+.notes-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.note-card {
+  background-color: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px rgba(0, 255, 255, 0.1);
+  text-align: center;
+  font-size: 1.1rem;
+  color: #fff;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  border: 1px solid #00ffd0;
+}
+
+.note-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 25px rgba(0, 255, 255, 0.25);
+}
+
+/* FOOTER */
+.footer {
+  background: var(--bg-dark);
+  text-align: center; padding: 1.5rem 1rem;
+  font-size: 0.85rem; color: var(--text-secondary);
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  .note-card {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}
+
+

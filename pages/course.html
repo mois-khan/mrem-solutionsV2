@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Free Engineering Courses | MREM Solutions</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="./course.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-container">
+      <div class="nav-brand">MREM Solutions</div>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+      <ul class="nav-menu">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./notes.html">Notes</a></li>
+        <li><a href="./course.html" class="active">Courses</a></li>
+        <li><a href="./resources.html">Smart Tools</a></li>
+        <li><a href="./placement.html">Placement</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">Explore Free Engineering Courses</h1>
+      <p class="hero-sub">Skill up across all engineering domains with top-rated, free courses.</p>
+      <div class="search-wrapper">
+        <input type="text" id="searchInput" placeholder="Search by topic, platform, or keyword..." />
+      </div>
+    </div>
+  </header>
+
+  <main class="course-container" id="coursesContainer">
+    <!-- JS injects course cards here -->
+  </main>
+
+  <div id="detailsModal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <div id="modalDetails"></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>© 2025 MREM Solutions · Built with 💡 by Students for Students</p>
+  </footer>
+
+  <script src="./course.js"></script>
+</body>
+</html>
